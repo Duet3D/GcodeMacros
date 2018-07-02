@@ -1,2 +1,2 @@
-; Turn extruder motors off
-M84 E0:1
+; Turn extruder motors off (useful for manually loading / unload filament without simply doing M84 and losing the homing status). 
+M84 E0:1:2:3:4 ; edit to suit the number of extruders - eg simply use M84 E0 for a single extruder.
