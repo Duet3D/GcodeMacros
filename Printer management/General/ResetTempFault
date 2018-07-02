@@ -1,0 +1,4 @@
+;Reset temperature faults.
+M562 P0 ;bed heater
+M562 P1 ; hot end heater
+; add M562 for any other heaters such as additional hot ends or chamber heaters
