@@ -1,0 +1,6 @@
+; move the nozzle to the center of the bed
+;
+G90				; absolute positioning
+G1 Z5				; drop bed for nozzle clearance
+G1 X150 Y110 F4000		; move to bed center
+G91				; relative positioning

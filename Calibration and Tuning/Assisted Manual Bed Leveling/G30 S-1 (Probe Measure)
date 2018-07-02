@@ -1,0 +1,3 @@
+G90			; Absolute
+G1 Z10			; Lower bed 10mm
+G30 S-1 		; Do a probe and don't reset z height to get trigger height of probe.

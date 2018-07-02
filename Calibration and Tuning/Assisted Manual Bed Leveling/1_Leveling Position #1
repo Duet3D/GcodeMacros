@@ -1,0 +1,6 @@
+;Moves print head to rear left position closest to reference adjustment screw.
+;
+G90			; Absolute positioning
+G1 Z5			; Lower bed for nozzle clearance
+G1 X60 Y285 F6000	; Move to rear left corner
+G91			; Relative positioning
