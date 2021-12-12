@@ -23,14 +23,16 @@ var bedTemp = 0 ; default to not heating bed
 if exists(param.B)
 	set var.bedTemp = param.B
 
-if !(var.bedTemp >=0)
+if !(var.bedTemp >=0) || (var.bedTemp > heat.heaters[heat.bedHeaters[0]].max)
 	abort "invalid bed temp - test aborted"
 
 var nozzleTemp = 0 ; default to not heating nozzle
 if exists(param.R)
+	if !exists(param.T)
+		abort "Nozzle temp set, but no tool specified"
 	set var.nozzleTemp = param.R
 
-if !(var.nozzleTemp >= 0) ; validate temp
+if !(var.nozzleTemp >= 0) || (var.nozzleTemp > heat.heaters[tools[param.T].heaters[0]].max); validate temp
 	abort "Invalid nozzle temp - test aborted"
 
 var probeNumber = 0
