@@ -4,7 +4,7 @@ RepRapFirmware allows for user macros to be stored and run. This repository is a
 
 Documentation is maintained here:
 
-https://duet3d.dozuki.com/Wiki/Macros
+https://docs.duet3d.com/en/User_manual/Tuning/Macros
 
 RepRapFirmware also uses macros to conduct many user configurable routines such as homing, tool changing, bed probing etc.
 
